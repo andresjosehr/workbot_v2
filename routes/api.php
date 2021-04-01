@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
@@ -22,6 +23,6 @@ $router->get('/', function(){
     return "Workbot 1.0";
 });
 
-$router->post('config', "TasksController@setConfig");
+Route::post('config', "App\Http\Controllers\TasksController@setConfig");
 
-$router->get('trigger-alerts', "TasksController@triggerAlerts");
+Route::get('trigger-alerts', "App\Http\Controllers\TasksController@triggerAlerts");

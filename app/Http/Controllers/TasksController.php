@@ -6,7 +6,7 @@ use GuzzleHttp\Client;
 use Symfony\Component\DomCrawler\Crawler;
 use Illuminate\Http\Response;
 use Illuminate\Http\Request;
-use App\Proyect;
+use App\Models\Proyect;
 
 class TasksController extends Controller
 {
