@@ -172,7 +172,10 @@ class TasksController extends Controller
             plataforma :)
             
             Aqui te dejo algunos de mis proyectos:
-            
+            Schema::create('proyects', function (Blueprint $table) {
+                $table->id();
+                $table->timestamps();
+            });
             artnevents.damplix.com	 
             avicola.damplix.com	 
             bestmusic.damplix.com	 
